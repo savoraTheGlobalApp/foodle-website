@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodle Blog - Food Trends, Tips, and Stories</title>
+    <meta name="description" content="Explore the latest food trends, restaurant reviews, cooking tips, and culinary stories on the Foodle blog.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="icon" href="../images/favicon.ico">
+</head>
+<body>
+    <header>
+        <!-- Same navbar as index.html with adjusted paths -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/foodle-logo.png" alt="Foodle Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../features.html">Features</a></li>
+                <li><a href="index.html" class="active">Blog</a></li>
+                <!-- <li><a href="../community.html">Community</a></li> -->
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="../waitlist.html" class="btn btn-primary">Join Waitlist</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero blog-hero">
+            <div class="container">
+                <h1>Foodle Blog</h1>
+                <p>Food trends, culinary adventures, and stories from our community</p>
+            </div>
+        </section>
+
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="container">
+                <div class="featured-post-card">
+                    <div class="featured-post-image">
+                        <img src="../images/blog/featured-post.jpg" alt="Featured Blog Post">
+                    </div>
+                    <div class="featured-post-content">
+                        <div class="post-category">Food Trends</div>
+                        <h2>The Rise of Hyper-Local Dining: Why Restaurants Are Sourcing Ingredients Within Miles</h2>
+                        <p class="post-excerpt">Discover how the farm-to-table movement has evolved into an ultra-local dining experience, with restaurants growing ingredients on-site or sourcing from within a few miles radius.</p>
+                        <div class="post-meta">
+                            <div class="post-author">
+                                <img src="../images/team/author1.jpg" alt="Author Avatar">
+                                <span>By Sarah Wilson</span>
+                            </div>
+                            <div class="post-date">June 15, 2023</div>
+                        </div>
+                        <a href="post-template.html" class="btn btn-secondary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories">
+            <div class="container">
+                <h2>Explore Topics</h2>
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">All</button>
+                    <button class="category-tab" data-category="food-trends">Food Trends</button>
+                    <button class="category-tab" data-category="restaurant-spotlights">Restaurant Spotlights</button>
+                    <button class="category-tab" data-category="cooking-tips">Cooking Tips</button>
+                    <button class="category-tab" data-category="app-updates">App Updates</button>
+                    <button class="category-tab" data-category="community-stories">Community Stories</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Posts Grid -->
+        <section class="blog-posts">
+            <div class="container">
+                <div class="posts-grid">
+                    <!-- Post 1 -->
+                    <div class="post-card" data-category="food-trends">
+                        <div class="post-image">
+                            <img src="../images/blog/post1.jpg" alt="Blog Post Image">
+                            <div class="post-category">Food Trends</div>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="post-template.html">10 Food Photography Tips to Make Your Dishes Instagram-Worthy</a></h3>
+                            <p class="post-excerpt">Learn how to capture stunning food photos that will make your followers drool.</p>
+                            <div class="post-meta">
+                                <div class="post-date">May 28, 2023</div>
+                                <div class="post-read-time">5 min read</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 2 -->
+                    <div class="post-card" data-category="restaurant-spotlights">
+                        <div class="post-image">
+                            <img src="../images/blog/post2.jpg" alt="Blog Post Image">
+                            <div class="post-category">Restaurant Spotlights</div>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="post-template.html">Hidden Gems: 5 Underrated Restaurants in New York City</a></h3>
+                            <p class="post-excerpt">Discover these lesser-known culinary treasures that locals love but tourists rarely find.</p>
+                            <div class="post-meta">
+                                <div class="post-date">May 20, 2023</div>
+                                <div class="post-read-time">7 min read</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 3 -->
+                    <div class="post-card" data-category="cooking-tips">
+                        <div class="post-image">
+                            <img src="../images/blog/post3.jpg" alt="Blog Post Image">
+                            <div class="post-category">Cooking Tips</div>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="post-template.html">Elevate Your Home Cooking: Chef-Approved Techniques Anyone Can Master</a></h3>
+                            <p class="post-excerpt">Professional chefs share simple techniques that can transform your everyday cooking.</p>
+                            <div class="post-meta">
+                                <div class="post-date">May 15, 2023</div>
+                                <div class="post-read-time">8 min read</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 4 -->
+                    <div class="post-card" data-category="app-updates">
+                        <div class="post-image">
+                            <img src="../images/blog/post4.jpg" alt="Blog Post Image">
+                            <div class="post-category">App Updates</div>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="post-template.html">Introducing Foodle's New Taste Algorithm: How We're Personalizing Your Food Discovery</a></h3>
+                            <p class="post-excerpt">A behind-the-scenes look at our innovative approach to understanding your flavor preferences.</p>
+                            <div class="post-meta">
+                                <div class="post-date">May 10, 2023</div>
+                                <div class="post-read-time">6 min read</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 5 -->
+                    <div class="post-card" data-category="community-stories">
+                        <div class="post-image">
+                            <img src="../images/blog/post5.jpg" alt="Blog Post Image">
+                            <div class="post-category">Community Stories</div>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="post-template.html">From Food Blogger to Restaurant Owner: Maria's Inspiring Journey</a></h3>
+                            <p class="post-excerpt">How one Foodle community member turned her passion for food into a thriving business.</p>
+                            <div class="post-meta">
+                                <div class="post-date">May 5, 2023</div>
+                                <div class="post-read-time">10 min read</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post 6 -->
+                    <div class="post-card" data-category="food-trends">
+                        <div class="post-image">
+                            <img src="../images/blog/post6.jpg" alt="Blog Post Image">
+                            <div class="post-category">Food Trends</div>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="post-template.html">The Fermentation Revolution: Why Chefs Are Obsessed with Aged Ingredients</a></h3>
+                            <p class="post-excerpt">Exploring the science and flavors behind the fermentation trend taking over restaurant menus.</p>
+                            <div class="post-meta">
+                                <div class="post-date">April 28, 2023</div>
+                                <div class="post-read-time">7 min read</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button class="btn btn-secondary">Load More Articles</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="blog-newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated on Food Trends</h2>
+                    <p>Subscribe to our newsletter for the latest food discoveries, app updates, and culinary inspiration.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                    <p class="form-note">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Same footer as index.html with adjusted paths -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="../images/foodle-logo-white.png" alt="Foodle Logo">
+                    <p>Discover. Share. Connect.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../features.html">Features</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="../terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/foodleapp" target="_blank"><img src="../images/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="https://twitter.com/foodleapp" target="_blank"><img src="../images/icons/twitter.svg" alt="Twitter"></a>
+                        <a href="https://facebook.com/foodleapp" target="_blank"><img src="../images/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="https://tiktok.com/@foodleapp" target="_blank"><img src="../images/icons/tiktok.svg" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Foodle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+</html> 

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Foodle Waitlist - Get Early Access</title>
+    <meta name="description" content="Sign up for the Foodle waitlist to be among the first to experience our revolutionary food discovery app.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <!-- Same navbar as index.html -->
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/foodle-logo.png" alt="Foodle Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="waitlist.html" class="btn btn-primary active">Join Waitlist</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero waitlist-hero">
+            <div class="container">
+                <h1>Join the Foodle Waitlist</h1>
+                <p>Be among the first to experience the future of food discovery</p>
+            </div>
+        </section>
+
+        <!-- Waitlist Form Section -->
+        <section class="waitlist-form-section">
+            <div class="container">
+                <div class="waitlist-grid">
+                    <div class="waitlist-content">
+                        <h2>Why Join Our Waitlist?</h2>
+                        <ul class="benefits-list">
+                            <li>
+                                <div class="benefit-icon">
+                                    <img src="images/icons/early-access.svg" alt="Early Access Icon">
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Early Access</h3>
+                                    <p>Be the first to experience Foodle when we launch</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="benefit-icon">
+                                    <img src="images/icons/exclusive.svg" alt="Exclusive Features Icon">
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Exclusive Features</h3>
+                                    <p>Get access to beta features not available to the general public</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="benefit-icon">
+                                    <img src="images/icons/influence.svg" alt="Influence Icon">
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Shape the Product</h3>
+                                    <p>Provide feedback that will influence Foodle's development</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="benefit-icon">
+                                    <img src="images/icons/rewards.svg" alt="Rewards Icon">
+                                </div>
+                                <div class="benefit-content">
+                                    <h3>Founding Member Perks</h3>
+                                    <p>Receive special rewards and recognition as an early supporter</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="launch-timeline">
+                            <h3>Our Launch Timeline</h3>
+                            <div class="timeline">
+                                <div class="timeline-item completed">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h4>Q1 2023</h4>
+                                        <p>Initial concept development</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item completed">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h4>Q2 2023</h4>
+                                        <p>Alpha testing with core team</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item active">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h4>Q3 2023</h4>
+                                        <p>Private beta with waitlist members</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker"></div>
+                                    <div class="timeline-content">
+                                        <h4>Q4 2023</h4>
+                                        <p>Public launch</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="waitlist-form-container">
+                        <div class="form-card">
+                            <h2>Reserve Your Spot</h2>
+                            <p>Complete the form below to join our waitlist. The earlier you join, the sooner you'll get access!</p>
+                            
+                            <form id="waitlist-form" class="waitlist-form">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="location">Location (City, Country)</label>
+                                    <input type="text" id="location" name="location">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>I'm interested in Foodle as a:</label>
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interest" value="food_lover"> Food Lover
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interest" value="restaurant_owner"> Restaurant Owner
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interest" value="food_blogger"> Food Blogger/Influencer
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="referral">How did you hear about us?</label>
+                                    <select id="referral" name="referral">
+                                        <option value="">Please select</option>
+                                        <option value="social_media">Social Media</option>
+                                        <option value="friend">Friend or Colleague</option>
+                                        <option value="blog">Blog or Article</option>
+                                        <option value="search">Search Engine</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">What are you most excited about? (Optional)</label>
+                                    <textarea id="message" name="message" rows="3"></textarea>
+                                </div>
+                                
+                                <div class="form-group checkbox-consent">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="updates_consent" required>
+                                        I agree to receive updates about Foodle's launch and features
+                                    </label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-large">Join the Waitlist</button>
+                                
+                                <p class="form-note">By joining, you agree to our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-of-service.html">Terms of Service</a>.</p>
+                            </form>
+                            
+                            <div id="form-success" class="form-success hidden">
+                                <div class="success-icon">
+                                    <img src="images/icons/success.svg" alt="Success">
+                                </div>
+                                <h3>You're on the list!</h3>
+                                <p>Thank you for joining our waitlist. We'll be in touch soon with updates on our launch and your early access.</p>
+                                <div class="share-waitlist">
+                                    <p>Share with friends to move up the waitlist:</p>
+                                    <div class="social-share-buttons">
+                                        <a href="#" class="btn btn-social btn-twitter">
+                                            <img src="images/icons/twitter.svg" alt="Twitter">
+                                            Twitter
+                                        </a>
+                                        <a href="#" class="btn btn-social btn-facebook">
+                                            <img src="images/icons/facebook.svg" alt="Facebook">
+                                            Facebook
+                                        </a>
+                                    </div>
+                                    <div class="referral-link">
+                                        <p>Or share your unique referral link:</p>
+                                        <div class="copy-link">
+                                            <input type="text" value="https://foodleapp.com/waitlist?ref=12345" readonly>
+                                            <button class="btn btn-copy">Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="current-stats">
+                            <div class="stat">
+                                <span class="stat-number">2,547</span>
+                                <span class="stat-label">People on waitlist</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">42</span>
+                                <span class="stat-label">Days until beta launch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="waitlist-testimonials">
+            <div class="container">
+                <h2>What Early Testers Are Saying</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <div class="quote">"I've been part of the alpha testing group, and I can't wait for everyone to experience how Foodle has changed the way I discover new restaurants."</div>
+                        <div class="user">
+                            <img src="images/testimonials/user4.jpg" alt="User Avatar">
+                            <div class="user-info">
+                                <h4>David Park</h4>
+                                <p>Alpha Tester</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="quote">"As someone who dines out 3-4 times a week, Foodle's personalized recommendations have been spot on. It's like having a foodie friend who really knows your taste."</div>
+                        <div class="user">
+                            <img src="images/testimonials/user5.jpg" alt="User Avatar">
+                            <div class="user-info">
+                                <h4>Priya Sharma</h4>
+                                <p>Alpha Tester</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="quote">"The social features make sharing food discoveries with friends so much more fun than generic review sites. Can't wait for the full launch!"</div>
+                        <div class="user">
+                            <img src="images/testimonials/user6.jpg" alt="User Avatar">
+                            <div class="user-info">
+                                <h4>Marcus Johnson</h4>
+                                <p>Alpha Tester</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="waitlist-faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>When will Foodle officially launch?</h3>
+                        <p>We're planning to launch our beta version in Q3 2023, with a full public launch in Q4 2023. Waitlist members will get access in order of signup, so the earlier you join, the sooner you'll get access!</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How does the waitlist work?</h3>
+                        <p>Once you sign up, you'll be placed in our queue. We'll be sending invites in batches, starting with our earliest supporters. You can move up the waitlist by referring friends to sign up using your unique referral link.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What platforms will Foodle be available on?</h3>
+                        <p>Foodle will launch on iOS and Android simultaneously, with a web version coming shortly after the initial mobile app launch.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Will Foodle be available in my city?</h3>
+                        <p>We're launching initially in major US cities, with plans to expand quickly to other regions. The information you provide about your location will help us prioritize our expansion.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is there a cost to join the waitlist?</h3>
+                        <p>No, joining the waitlist is completely free. We'll also be offering special founding member perks to our early supporters when we launch.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>I'm a restaurant owner. How can I get my restaurant on Foodle?</h3>
+                        <p>We'd love to have you! Please indicate that you're a restaurant owner when signing up for the waitlist, and we'll be in touch with specific information about our restaurant partnership program.</p>
+                    </div>
+                </div>
+                <div class="more-questions">
+                    <p>Have more questions? <a href="contact.html">Contact our team</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Don't Miss Out on the Food Discovery Revolution</h2>
+                <p>Spots are filling up quickly. Join our waitlist today!</p>
+                <a href="#waitlist-form" class="btn btn-primary btn-large">Join Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="images/foodle-logo-white.png" alt="Foodle Logo">
+                    <p>Discover. Share. Connect.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/foodleapp" target="_blank"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="https://twitter.com/foodleapp" target="_blank"><img src="images/icons/twitter.svg" alt="Twitter"></a>
+                        <a href="https://facebook.com/foodleapp" target="_blank"><img src="images/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="https://tiktok.com/@foodleapp" target="_blank"><img src="images/icons/tiktok.svg" alt="TikTok"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Foodle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/waitlist.js"></script>
+</body>
+</html> 
