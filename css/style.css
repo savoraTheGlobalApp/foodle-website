@@ -78,6 +78,10 @@
     line-height: 1.6;
     background-color: var(--white);
     overflow-x: hidden;
+    padding-top: 70px; /* Adjust this value based on your header height */
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
   }
   
   img, svg, video {
@@ -173,7 +177,7 @@
   }
   
   .page-hero {
-    padding: var(--space-xxl) 0;
+    padding-top: var(--space-xxl);
     background-color: var(--light);
     text-align: center;
   }
@@ -246,23 +250,31 @@
   /* ---- NAVIGATION ---- */
   .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: var(--space-md) 0;
-    position: sticky;
-    top: 0;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+    max-width: var(--container-xl);
+    margin: 0 auto;
     background-color: var(--white);
-    z-index: 1000;
-    box-shadow: var(--shadow-sm);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    height: 70px; /* Fixed height */
   }
   
   .logo img {
     height: 40px;
+    width: auto;
+    display: block;
   }
   
   .nav-links {
     display: flex;
-    gap: var(--space-lg);
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   
   .nav-links a {
@@ -350,22 +362,24 @@
   
   /* ---- FEATURES SECTION ---- */
   .features-highlight {
-    text-align: center;
+    padding: var(--space-xxl) 0;
+    background-color: var(--light);
   }
   
   .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-lg);
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
     margin-top: var(--space-xl);
   }
   
   .feature-card {
     background-color: var(--white);
-    border-radius: var(--radius-md);
-    padding: var(--space-lg);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    text-align: center;
     box-shadow: var(--shadow-md);
-    transition: transform var(--transition-medium);
+    transition: transform 0.3s ease;
   }
   
   .feature-card:hover {
@@ -373,21 +387,59 @@
   }
   
   .feature-icon {
-    margin-bottom: var(--space-md);
+    width: 100%;
+    height: 500px;
+    margin-bottom: var(--space-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    border-radius: var(--radius-md);
+    overflow: hidden;
   }
   
   .feature-icon img {
-    width: 64px;
-    height: 64px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover .feature-icon img {
+    transform: scale(1.05);
   }
   
   .feature-card h3 {
-    margin-bottom: var(--space-sm);
+    color: var(--dark);
+    margin-bottom: var(--space-md);
+    font-size: 1.75rem;
   }
   
   .feature-card p {
     color: var(--gray-dark);
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .feature-icon {
+        height: 250px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-icon {
+        height: 200px;
+    }
   }
   
   /* ---- TESTIMONIALS ---- */
@@ -1651,4 +1703,69 @@
   .mb-3 { margin-bottom: var(--space-lg); }
   .mb-4 { margin-bottom: var(--space-xl); }
   .mb-5 { margin-bottom: var(--space-xxl); }
+
+/* Sticky Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    transition: all 0.3s ease;
+}
+
+/* Adjust body padding to prevent content from hiding under header */
+body {
+    padding-top: 70px; /* Same as navbar height */
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Ensure other elements stack properly */
+main {
+    position: relative;
+    z-index: 1;
+}
+
+/* Update hero section to account for header */
+.page-hero {
+    padding-top: var(--space-xxl);
+}
+
+/* Optional: Style for scrolled state */
+.navbar.scrolled {
+    padding: 0.5rem var(--space-lg);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure content flows properly */
+main {
+    position: relative;
+    z-index: 1;
+}
+
+/* Navigation links container */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Logo sizing */
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* Make sure all content layers properly */
+* {
+    box-sizing: border-box;
+}
 

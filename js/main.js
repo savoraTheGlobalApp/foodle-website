@@ -80,4 +80,32 @@ document.addEventListener('DOMContentLoaded', function() {
     
     lastScrollTop = scrollTop;
   });
+
+  // Sticky Header functionality
+  const navbar = document.querySelector('.navbar');
+  let lastScroll = 0;
+
+  // Initial check for scroll position
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+  }
+
+  // Add scroll event listener
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    // Add scrolled class when page is scrolled
+    if (currentScroll > 0) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+
+    // Ensure header stays visible on mobile
+    if (window.innerWidth <= 768) {
+      header.style.position = 'fixed';
+    }
+
+    lastScroll = currentScroll;
+  });
 }); 
